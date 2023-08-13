@@ -7,7 +7,7 @@ import AboutMeComponent from "@/components/AboutMeComponent.vue";
 <template>
     <main class="d-flex flex-row main-container vh-100">
         <div class="row w-100 mx-0">
-            <div class="person-container h-100 col-4">
+            <div class="person-container h-100 col-4 col-4-xl">
                 <PersonComponent/>
             </div>
             <div class="col-8 bg-dark h-100">
