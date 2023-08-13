@@ -4,10 +4,16 @@ import "bootstrap"
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
+import router from './router'
+
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import {faGithub, faGitlab, faTelegram} from '@fortawesome/free-brands-svg-icons'
+import {faEnvelope} from '@fortawesome/free-solid-svg-icons'
+import {library} from '@fortawesome/fontawesome-svg-core';
 
 import App from './App.vue'
-import router from './router'
+
+library.add(faGithub, faGitlab, faTelegram, faEnvelope)
 
 const app = createApp(App)
 
