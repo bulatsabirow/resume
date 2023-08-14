@@ -5,7 +5,7 @@ import AboutMeComponent from "@/components/AboutMeComponent.vue";
 </script>
 
 <template>
-    <main class="d-flex flex-row main-container vh-100">
+    <main class="d-flex flex-row main-container vh-100 w-100">
         <div class="row w-100 mx-0">
             <div class="person-container h-100 col-3 col-4-xl">
                 <PersonComponent/>
@@ -20,5 +20,6 @@ import AboutMeComponent from "@/components/AboutMeComponent.vue";
 <style scoped>
     .person-container {
         background-color: var(--bs-purple);
+        max-width: 400px;
     }
 </style>

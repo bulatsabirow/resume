@@ -4,38 +4,42 @@ const props = defineProps({
     size: {
         type: String,
         default: 'lg'
+    },
+    position: {
+        type: String,
+        default: 'center',
     }
 })
 </script>
 
 <template>
-    <div v-if="size === 'xl'">
-        <h1 class="text-center header-text mt-4">
+    <div class="d-inline" v-if="size === 'xl'">
+        <h1 :class="`text-${position}` + ' header-text mt-4'">
             <slot></slot>
         </h1>
     </div>
-    <div v-else-if="size === 'lg'">
-        <h2 class="text-center header-text mt-4">
+    <div class="d-inline" v-else-if="size === 'lg'">
+        <h2 :class="`text-${position}` + ' header-text mt-4'">
             <slot></slot>
         </h2>
     </div>
-    <div v-else-if="size === 'md' || !allowedSizes.includes(size)">
-        <h3 class="text-center header-text mt-4">
+    <div class="d-inline" v-else-if="size === 'md' || !allowedSizes.includes(size)">
+        <h3 :class="`text-${position}` + ' header-text mt-4'">
             <slot></slot>
         </h3>
     </div>
-    <div v-else-if="size === 'sm'">
-        <h4 class="text-center header-text mt-4">
+    <div class="d-inline" v-else-if="size === 'sm'">
+        <h4 :class="`text-${position}` + ' header-text mt-4'">
             <slot></slot>
         </h4>
     </div>
-    <div v-else-if="size === 'xs'">
-        <h5 class="text-center header-text mt-4">
+    <div class="d-inline" v-else-if="size === 'xs'">
+        <h5 :class="`text-${position}` + ' header-text mt-4'">
             <slot></slot>
         </h5>
     </div>
-    <div v-else>
-        <h6 class="text-center header-text mt-4">
+    <div class="d-inline" v-else>
+        <h6 :class="`text-${position}` + ' header-text mt-4'">
             <slot></slot>
         </h6>
     </div>
