@@ -1,6 +1,5 @@
 <script setup>
 import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
-import {ref} from "vue";
 
 const props = defineProps({
     skill: String,
@@ -13,12 +12,12 @@ const props = defineProps({
 </script>
 
 <template>
-    <li><FontAwesomeIcon class="skill-icon" :icon="props.icon"/>
+    <li class="mb-1"><FontAwesomeIcon size="2x" class="skill-icon" :icon="props.icon"/>
         <span class="skill-text monospace-text ms-2">{{ props.skill }}</span>
     </li>
 </template>
 
-<style scoped>
+<style>
     .skill-icon {
         color: v-bind(props['color']);
     }

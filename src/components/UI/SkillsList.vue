@@ -12,6 +12,7 @@ const props = defineProps({
     <ul class="list-unstyled text-white">
              <SkillsItem v-for="skill in skills" :icon="skill.icon"
                         :skill="skill.title" :color="skill.color" />
+            <slot name="extra-content"></slot>
     </ul>
 </template>
 

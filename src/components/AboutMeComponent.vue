@@ -5,7 +5,6 @@ import {calculateAge} from "../../utils/date.js";
 import {defineWordEnding} from "../../utils/wordEnding.js";
 import HeaderText from "@/components/UI/HeaderText.vue";
 import SkillsList from "@/components/UI/SkillsList.vue";
-import SkillsItem from "@/components/UI/SkillsItem.vue";
 
 const age = computed(() => calculateAge("2003/02/15"));
 const breadcrumbs = [`${age.value} ${defineWordEnding(age.value)} `, "Казань"];
@@ -45,7 +44,18 @@ const skills = [{
                 Нацелен на активное сотрудничество в команде и открыт к новым вызовам.
             </p>
         </div>
-        <SkillsList :skills="skills"></SkillsList>
+        <SkillsList :skills="skills">
+            <template v-slot:extra-content>
+                <li>
+                    <img class="object-fit-cover" :width="40" :height="40" src="../assets/postgresql.png" alt="<postgresql icon>">
+                    <span class="ms-2 text-white monospace-text skill-text">PostgreSQL</span>
+                </li>
+                <li>
+                    <img class="object-fit-cover" src="../assets/django.png" alt="<django icon>">
+                    <span class="ms-2 text-white monospace-text skill-text">Django</span>
+                </li>
+            </template>
+        </SkillsList>
     </main>
 </template>
 
