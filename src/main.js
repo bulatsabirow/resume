@@ -7,13 +7,13 @@ import { createPinia } from 'pinia'
 import router from './router'
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import {faGithub, faGitlab, faTelegram} from '@fortawesome/free-brands-svg-icons'
+import {faGithub, faGitlab, faTelegram, faPython, faDocker, faJs, faVuejs} from '@fortawesome/free-brands-svg-icons'
 import {faEnvelope} from '@fortawesome/free-solid-svg-icons'
 import {library} from '@fortawesome/fontawesome-svg-core';
 
 import App from './App.vue'
 
-library.add(faGithub, faGitlab, faTelegram, faEnvelope)
+library.add(faGithub, faGitlab, faTelegram, faEnvelope, faPython, faDocker, faJs, faVuejs)
 
 const app = createApp(App)
 

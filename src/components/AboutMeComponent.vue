@@ -4,14 +4,37 @@ import {computed} from "vue";
 import {calculateAge} from "../../utils/date.js";
 import {defineWordEnding} from "../../utils/wordEnding.js";
 import HeaderText from "@/components/UI/HeaderText.vue";
+import SkillsList from "@/components/UI/SkillsList.vue";
+import SkillsItem from "@/components/UI/SkillsItem.vue";
 
 const age = computed(() => calculateAge("2003/02/15"));
 const breadcrumbs = [`${age.value} ${defineWordEnding(age.value)} `, "Казань"];
+const skills = [{
+        icon: ['fab', 'python'],
+        title: 'Python',
+        color: '#00D846',
+    },
+    {
+        icon: ['fab', 'js'],
+        title: 'JavaScript',
+        color: '#F0D74D',
+    },
+    {
+        icon: ['fab', 'vuejs'],
+        title: 'Vue.js',
+        color: '#2CB284',
+    },
+    {
+        icon: ['fab', 'docker'],
+        title: 'Docker',
+        color: '#016FD0',
+    },
+]
 
 </script>
 
 <template>
-    <main class="about-me-container d-flex flex-column h-100 w-100">
+    <main class="ms-2 about-me-container d-flex flex-column h-100 w-100">
         <HeaderText size="lg" class="text-white" position="start">Обо мне</HeaderText>
         <Breadcrumbs class="mt-2" :breadcrumbs="breadcrumbs"/>
         <div class="about-me text-white">
@@ -22,14 +45,11 @@ const breadcrumbs = [`${age.value} ${defineWordEnding(age.value)} `, "Казан
                 Нацелен на активное сотрудничество в команде и открыт к новым вызовам.
             </p>
         </div>
+        <SkillsList :skills="skills"></SkillsList>
     </main>
 </template>
 
 <style scoped>
-    .about-me-container > * {
-        margin-left: 1rem;
-    }
-
     .about-me-text {
         text-indent: 2rem;
     }

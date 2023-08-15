@@ -3,3 +3,7 @@
 #app {
     width: calc(100vw);
 }
+
+.monospace-text {
+    font-family: "Roboto Mono", monospace;
+}
