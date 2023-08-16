@@ -34,9 +34,9 @@ const skills = [{
 
 <template>
     <main class="ms-2 about-me-container d-flex flex-column h-100 w-100">
-        <HeaderText size="lg" class="text-white" position="start">Обо мне</HeaderText>
+        <HeaderText size="lg" position="start">Обо мне</HeaderText>
         <Breadcrumbs class="mt-2" :breadcrumbs="breadcrumbs"/>
-        <div class="about-me text-white">
+        <div class="about-me">
             <p class="mb-0 about-me-text text-break lh-lg">
                 Я  студент 2 курса ИТИС КФУ.  Несмотря на то что меня небогатый практический опыт разработки, я способен быстро осваивать новые навыки и концентрировать свое внимание ради достижения нужного результата.
             </p>
@@ -48,11 +48,11 @@ const skills = [{
             <template v-slot:extra-content>
                 <li>
                     <img class="object-fit-cover" :width="40" :height="40" src="../assets/postgresql.png" alt="<postgresql icon>">
-                    <span class="ms-2 text-white monospace-text skill-text">PostgreSQL</span>
+                    <span class="ms-2 monospace-text skill-text">PostgreSQL</span>
                 </li>
                 <li>
                     <img class="object-fit-cover" src="../assets/django.png" alt="<django icon>">
-                    <span class="ms-2 text-white monospace-text skill-text">Django</span>
+                    <span class="ms-2 monospace-text skill-text">Django</span>
                 </li>
             </template>
         </SkillsList>

@@ -8,8 +8,8 @@ const props = defineProps({
 </script>
 
 <template>
-    <HeaderText size="lg" position="start" class="text-white">Навыки</HeaderText>
-    <ul class="list-unstyled text-white">
+    <HeaderText size="lg" position="start">Навыки</HeaderText>
+    <ul class="list-unstyled">
              <SkillsItem v-for="skill in skills" :icon="skill.icon"
                         :skill="skill.title" :color="skill.color" />
             <slot name="extra-content"></slot>

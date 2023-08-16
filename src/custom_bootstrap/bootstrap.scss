@@ -1,0 +1,20 @@
+$purple: #A5429D;
+$white: #FFF5F5;
+$custom-gray: #606061;
+$custom-black: #2C2C2C;
+
+// custom breadcrumb divider color
+$breadcrumb-divider-color: $custom-gray;
+
+// custom night mode variables values
+$body-bg-dark: $custom-gray;
+$body-color-dark: $white;
+
+// custom light mode variables values
+$body-color: $custom-black;
+$body-bg: $white;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+
+
