@@ -5,8 +5,8 @@ import AboutMeComponent from "@/components/AboutMeComponent.vue";
 </script>
 
 <template>
-    <main class="d-flex flex-row main-container vh-100 w-100">
-        <div class="row w-100 mx-0">
+    <main class="d-flex flex-row main-container w-100 vh-100">
+        <div class="row mx-0">
             <div class="person-container h-100 col-3 col-4-xl">
                 <PersonComponent/>
             </div>
@@ -21,5 +21,7 @@ import AboutMeComponent from "@/components/AboutMeComponent.vue";
     .person-container {
         background-color: var(--bs-purple);
         max-width: 400px;
+        padding-left: 18px;
+        padding-right: 12px;
     }
 </style>

@@ -34,7 +34,7 @@ const skills = [{
 </script>
 
 <template>
-    <main class="px-2 about-me-container d-flex flex-column h-100 w-100">
+    <main class="px-3 about-me-container d-flex flex-column h-100 w-100">
         <div class="d-flex flex-row justify-content-between align-items-end">
             <HeaderText size="lg" position="start">Обо мне</HeaderText>
             <ModeSwitcherField class="mb-3"></ModeSwitcherField>

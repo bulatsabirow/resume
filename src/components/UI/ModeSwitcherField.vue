@@ -13,11 +13,11 @@ watch(isChecked, (newState, oldState) => {
 
 <template>
     <div class="form-check form-switch d-flex flex-row align-items-center">
-        <span class="me-5">
+        <span @click="isChecked = false" class="me-5">
             <FontAwesomeIcon size="xl" class="icon-moon" :icon="['fas', 'moon']"></FontAwesomeIcon>
         </span>
         <input class="mode-switch-input form-check-input" v-model="isChecked" type="checkbox" role="switch">
-        <span class="ms-2">
+        <span @click="isChecked = true" class="ms-2">
             <FontAwesomeIcon class="icon-sun" size="xl" :icon="['fas', 'sun']"></FontAwesomeIcon>
         </span>
     </div>
@@ -33,8 +33,8 @@ watch(isChecked, (newState, oldState) => {
     }
 
     .mode-switch-input:checked {
-        background-color: var(--bs-yellow); /* Change the color of the toggle when it is checked */
-        border-color: var(--bs-yellow); /* Change the border color of the toggle when it is checked */
+        background-color: var(--bs-yellow);
+        border-color: var(--bs-yellow);
     }
 
     .mode-switch-input:focus {
