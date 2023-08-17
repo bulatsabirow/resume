@@ -128,8 +128,8 @@
   color-scheme: dark;
   --bs-body-color: #FFF5F5;
   --bs-body-color-rgb: 255, 245, 245;
-  --bs-body-bg: #606061;
-  --bs-body-bg-rgb: 96, 96, 97;
+  --bs-body-bg: #2C2C2C;
+  --bs-body-bg-rgb: 44, 44, 44;
   --bs-emphasis-color: #FFF5F5;
   --bs-emphasis-color-rgb: 255, 245, 245;
   --bs-secondary-color: rgba(255, 245, 245, 0.75);

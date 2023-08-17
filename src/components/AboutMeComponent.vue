@@ -47,7 +47,7 @@ const skills = [{
         <SkillsList :skills="skills">
             <template v-slot:extra-content>
                 <li>
-                    <img class="object-fit-cover" :width="40" :height="40" src="../assets/postgresql.png" alt="<postgresql icon>">
+                    <img class="object-fit-cover" :width="30" :height="30" src="../assets/postgresql.png" alt="<postgresql icon>">
                     <span class="ms-2 monospace-text skill-text">PostgreSQL</span>
                 </li>
                 <li>
