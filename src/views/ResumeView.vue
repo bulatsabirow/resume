@@ -10,7 +10,7 @@ import AboutMeComponent from "@/components/AboutMeComponent.vue";
             <div class="person-container h-100 col-3 col-4-xl">
                 <PersonComponent/>
             </div>
-            <div class="col-9 bg-dark h-100">
+            <div class="col-9 h-100">
                 <AboutMeComponent/>
             </div>
         </div>

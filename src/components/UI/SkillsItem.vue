@@ -12,7 +12,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <li class="mb-1"><FontAwesomeIcon size="2x" class="skill-icon" :icon="props.icon"/>
+    <li class="mb-1"><FontAwesomeIcon size="xl" class="skill-icon" :icon="props.icon"/>
         <span class="skill-text monospace-text ms-2">{{ props.skill }}</span>
     </li>
 </template>
@@ -22,6 +22,6 @@ const props = defineProps({
         color: v-bind(props['color']);
     }
     .skill-text {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
 </style>
