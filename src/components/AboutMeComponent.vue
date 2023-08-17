@@ -5,6 +5,7 @@ import {calculateAge} from "../../utils/date.js";
 import {defineWordEnding} from "../../utils/wordEnding.js";
 import HeaderText from "@/components/UI/HeaderText.vue";
 import SkillsList from "@/components/UI/SkillsList.vue";
+import ModeSwitcherField from "@/components/UI/ModeSwitcherField.vue";
 
 const age = computed(() => calculateAge("2003/02/15"));
 const breadcrumbs = [`${age.value} ${defineWordEnding(age.value)} `, "Казань"];
@@ -33,8 +34,11 @@ const skills = [{
 </script>
 
 <template>
-    <main class="ms-2 about-me-container d-flex flex-column h-100 w-100">
-        <HeaderText size="lg" position="start">Обо мне</HeaderText>
+    <main class="px-2 about-me-container d-flex flex-column h-100 w-100">
+        <div class="d-flex flex-row justify-content-between align-items-end">
+            <HeaderText size="lg" position="start">Обо мне</HeaderText>
+            <ModeSwitcherField class="mb-3"></ModeSwitcherField>
+        </div>
         <Breadcrumbs class="mt-2" :breadcrumbs="breadcrumbs"/>
         <div class="about-me">
             <p class="mb-0 about-me-text text-break lh-lg">
