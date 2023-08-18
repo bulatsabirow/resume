@@ -2,6 +2,12 @@
 
 import PersonComponent from "@/components/PersonComponent.vue";
 import AboutMeComponent from "@/components/AboutMeComponent.vue";
+import {onMounted} from "vue";
+import {darkLightModeCookieName, getCookie} from "../../utils/cookie";
+
+onMounted(() => {
+    document.body.setAttribute("data-bs-theme", getCookie(darkLightModeCookieName) ?? 'dark');
+})
 </script>
 
 <template>

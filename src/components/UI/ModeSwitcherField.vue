@@ -3,7 +3,7 @@
 import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
 import {watch, ref, computed, onMounted} from "vue";
 import {darkLightModeCookieName, getCookie, setCookie} from "../../../utils/cookie";
-const isChecked = ref(false);
+const isChecked = ref(getCookie(darkLightModeCookieName) === 'light');
 
 watch(isChecked, (newState, oldState) => {
     setCookie(darkLightModeCookieName, newState ? 'light' : 'dark');
