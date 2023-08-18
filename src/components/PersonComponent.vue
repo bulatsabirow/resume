@@ -5,7 +5,7 @@ const currentYear = computed(() => new Date().getFullYear())
 import CircularImage from "@/components/UI/CircularImage.vue";
 import SelfTypingText from "@/components/UI/SelfTypingText.vue";
 import HeaderText from "@/components/UI/HeaderText.vue";
-import UnorderedList from "@/components/UI/UnorderedList.vue";
+import UnorderedList from "@/components/UI/MediaList.vue";
 </script>
 
 <template>
