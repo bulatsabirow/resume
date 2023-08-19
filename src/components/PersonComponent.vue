@@ -11,6 +11,7 @@ import UnorderedList from "@/components/UI/MediaList.vue";
 <template>
     <aside class="aside-container mt-5 d-flex flex-column justify-content-between align-items-center">
         <div class="flex-item-wrapper d-flex flex-column justify-content-center align-items-center">
+
             <CircularImage :radius="150" src="/src/assets/1659087797697.jpg"></CircularImage>
             <SelfTypingText/>
             <HeaderText size="md">Fullstack developer</HeaderText>
