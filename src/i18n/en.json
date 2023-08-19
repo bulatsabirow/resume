@@ -3,10 +3,11 @@
   "job": "Fullstack developer",
   "aboutMe": "About me",
   "breadcrumbs": {
-    "age": "years old",
+    "age": "0 years old | {n} year old | {n} years old",
     "city": "Kazan"
   },
   "aboutMeParagraph1": "I am a 2nd-year student at ITIS, Kazan Federal University. Despite having limited practical development experience, I am capable of quickly acquiring new skills and focusing my attention to achieve the desired outcome.",
   "aboutMeParagraph2": "Committed to active collaboration and open to new challenges.",
+  "skills": "Skills",
   "lang": "Русский"
 }

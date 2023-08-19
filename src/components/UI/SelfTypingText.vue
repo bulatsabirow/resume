@@ -4,7 +4,7 @@ import HeaderText from "@/components/UI/HeaderText.vue";
 </script>
 
 <template>
-    <HeaderText>Булат Сабиров</HeaderText>
+    <HeaderText>{{ $t("name") }}</HeaderText>
 </template>
 
 <style scoped>

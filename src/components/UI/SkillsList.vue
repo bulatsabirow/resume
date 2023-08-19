@@ -8,7 +8,6 @@ const props = defineProps({
 </script>
 
 <template>
-    <HeaderText size="lg" position="start">Навыки</HeaderText>
     <ul class="list-unstyled mt-2">
              <SkillsItem v-for="skill in skills" :icon="skill.icon"
                         :skill="skill.title" :color="skill.color" />
