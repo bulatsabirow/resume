@@ -5,6 +5,7 @@ import {calculateAge} from "../../utils/date.js";
 import HeaderText from "@/components/UI/HeaderText.vue";
 import SkillsList from "@/components/UI/SkillsList.vue";
 import ModeSwitcherField from "@/components/UI/ModeSwitcherField.vue";
+import LanguageSwitcher from "@/components/UI/LanguageSwitcher.vue";
 
 const age = computed(() => calculateAge("2003/02/15"));
 const breadcrumbs = [{key: "age", val: age.value}, {key: "city"}];
@@ -60,6 +61,7 @@ const skills = [{
                 </li>
             </template>
         </SkillsList>
+        <LanguageSwitcher></LanguageSwitcher>
     </main>
 </template>
 

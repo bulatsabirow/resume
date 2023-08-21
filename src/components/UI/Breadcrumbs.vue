@@ -9,7 +9,7 @@ const props = defineProps({
         <ol class="breadcrumb">
             <li v-for="{key, val} in props.breadcrumbs" class="breadcrumb-item text-purple">
                 <span v-if="key === 'age'" class="breadcrumb-text">{{ $t('breadcrumbs.age', val) }}</span>
-                <span v-else class="breadcrumb-text">{{ $t(`breadcrumbs.${key}`) }}></span>
+                <span v-else class="breadcrumb-text">{{ $t(`breadcrumbs.${key}`) }}</span>
             </li>
         </ol>
     </nav>

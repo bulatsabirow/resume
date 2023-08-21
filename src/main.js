@@ -14,15 +14,14 @@ import {library} from '@fortawesome/fontawesome-svg-core';
 import {createI18n, useI18n} from 'vue-i18n';
 
 import App from './App.vue'
-import {getCookie, localeCookieName} from "../utils/cookie";
 import {defaultLocale, languages} from "@/i18n";
 import {defineEnglishWordEnding, defineRussianWordEnding} from "../utils/wordEnding";
 
 library.add(faGithub, faGitlab, faTelegram, faEnvelope, faPython, faDocker, faJs, faVuejs, faSun, faMoon)
 
-const i18n = createI18n({
+export const i18n = createI18n({
     legacy: false,
-    locale: getCookie(localeCookieName) ?? defaultLocale,
+    locale: defaultLocale,
     fallbackLocale: defaultLocale,
     messages: languages,
     pluralRules: {
