@@ -33,7 +33,7 @@ const skills = [{
 </script>
 
 <template>
-    <main class="px-3 about-me-container d-flex flex-column h-100 w-100">
+    <main class="px-3 d-flex flex-column h-100 w-100">
         <div class="about-me-content flex-grow-1">
             <HeaderText size="lg" position="start">{{ $t("aboutMe") }}</HeaderText>
             <Breadcrumbs class="mt-3" :breadcrumbs="breadcrumbs"/>

@@ -10,7 +10,7 @@ import AboutMeComponent from "@/components/AboutMeComponent.vue";
             <div class="person-container col-lg-3">
                 <PersonComponent class="w-100"/>
             </div>
-            <div class="col-lg-9">
+            <div class="about-me-container col-lg-9">
                 <AboutMeComponent/>
             </div>
         </div>
@@ -21,11 +21,17 @@ import AboutMeComponent from "@/components/AboutMeComponent.vue";
     .person-container {
         background-color: var(--bs-purple);
         max-width: 400px;
+        min-width: 200px;
+    }
+
+    .about-me-container {
+        min-width: 300px;
     }
 
     @media (max-width: 992px) {
         .person-container {
-            width: 100% !important;
+            max-width: 100% !important;
+            min-width: 250px;
         }
     }
 </style>
