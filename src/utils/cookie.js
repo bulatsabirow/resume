@@ -1,4 +1,4 @@
-import Cookies from '../node_modules/js-cookie/dist/js.cookie';
+import Cookies from 'js-cookie';
 export const cookiesExpirationDate = {expires: 7};
 export const darkLightModeCookieName = "theme";
 
