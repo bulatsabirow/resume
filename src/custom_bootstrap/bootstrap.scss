@@ -1,7 +1,7 @@
-$purple: #A5429D;
-$white: #FFF5F5;
+$purple: #a5429d;
+$white: #fff5f5;
 $custom-gray: #606061;
-$custom-black: #2C2C2C;
+$custom-black: #2c2c2c;
 
 // custom breadcrumb divider color
 $breadcrumb-divider-color: $custom-gray;
@@ -14,7 +14,4 @@ $body-color-dark: $white;
 $body-color: $custom-black;
 $body-bg: $white;
 
-@import "../../node_modules/bootstrap/scss/bootstrap";
-
-
-
+@import '../../node_modules/bootstrap/scss/bootstrap';
