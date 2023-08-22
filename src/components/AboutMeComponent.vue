@@ -2,13 +2,12 @@
 import Breadcrumbs from "@/components/UI/Breadcrumbs.vue";
 import {computed} from "vue";
 import {calculateAge} from "../../utils/date.js";
-import {defineWordEnding} from "../../utils/wordEnding.js";
 import HeaderText from "@/components/UI/HeaderText.vue";
 import SkillsList from "@/components/UI/SkillsList.vue";
-import ModeSwitcherField from "@/components/UI/ModeSwitcherField.vue";
+import PageFooter from "@/components/UI/PageFooter.vue";
 
 const age = computed(() => calculateAge("2003/02/15"));
-const breadcrumbs = [`${age.value} ${defineWordEnding(age.value)} `, "Казань"];
+const breadcrumbs = [{key: "age", val: age.value}, {key: "city"}];
 const skills = [{
         icon: ['fab', 'python'],
         title: 'Python',
@@ -35,31 +34,32 @@ const skills = [{
 
 <template>
     <main class="px-3 about-me-container d-flex flex-column h-100 w-100">
-        <div class="d-flex flex-row justify-content-between align-items-end">
-            <HeaderText size="lg" position="start">Обо мне</HeaderText>
-            <ModeSwitcherField class="mb-3"></ModeSwitcherField>
+        <div class="about-me-content flex-grow-1">
+            <HeaderText size="lg" position="start">{{ $t("aboutMe") }}</HeaderText>
+            <Breadcrumbs class="mt-3" :breadcrumbs="breadcrumbs"/>
+            <div class="about-me">
+                <p class="mb-0 about-me-text text-break lh-lg">
+                    {{ $t("aboutMeParagraph1") }}
+                </p>
+                <p class="about-me-text text-break lh-lg">
+                    {{ $t("aboutMeParagraph2") }}
+                </p>
+            </div>
+            <HeaderText size="lg" position="start">{{ $t("skills") }}</HeaderText>
+            <SkillsList :skills="skills">
+                <template v-slot:extra-content>
+                    <li>
+                        <img class="object-fit-cover" :width="30" :height="30" src="../assets/postgresql.png" alt="<postgresql icon>">
+                        <span class="ms-2 monospace-text skill-text">PostgreSQL</span>
+                    </li>
+                    <li>
+                        <img class="object-fit-cover" src="../assets/django.png" alt="<django icon>">
+                        <span class="ms-2 monospace-text skill-text">Django</span>
+                    </li>
+                </template>
+            </SkillsList>
         </div>
-        <Breadcrumbs class="mt-2" :breadcrumbs="breadcrumbs"/>
-        <div class="about-me">
-            <p class="mb-0 about-me-text text-break lh-lg">
-                Я  студент 2 курса ИТИС КФУ.  Несмотря на то что меня небогатый практический опыт разработки, я способен быстро осваивать новые навыки и концентрировать свое внимание ради достижения нужного результата.
-            </p>
-            <p class="about-me-text text-break lh-lg">
-                Нацелен на активное сотрудничество в команде и открыт к новым вызовам.
-            </p>
-        </div>
-        <SkillsList :skills="skills">
-            <template v-slot:extra-content>
-                <li>
-                    <img class="object-fit-cover" :width="30" :height="30" src="../assets/postgresql.png" alt="<postgresql icon>">
-                    <span class="ms-2 monospace-text skill-text">PostgreSQL</span>
-                </li>
-                <li>
-                    <img class="object-fit-cover" src="../assets/django.png" alt="<django icon>">
-                    <span class="ms-2 monospace-text skill-text">Django</span>
-                </li>
-            </template>
-        </SkillsList>
+        <PageFooter class="mt-4"></PageFooter>
     </main>
 </template>
 

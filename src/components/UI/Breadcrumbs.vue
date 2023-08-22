@@ -7,8 +7,9 @@ const props = defineProps({
 <template>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li v-for="breadcrumb in breadcrumbs" class="breadcrumb-item text-purple">
-                <span class="breadcrumb-text">{{ breadcrumb }}</span>
+            <li v-for="{key, val} in props.breadcrumbs" class="breadcrumb-item text-purple">
+                <span v-if="key === 'age'" class="breadcrumb-text">{{ $t('breadcrumbs.age', val) }}</span>
+                <span v-else class="breadcrumb-text">{{ $t(`breadcrumbs.${key}`) }}</span>
             </li>
         </ol>
     </nav>

@@ -2,6 +2,7 @@ import Cookies from '../node_modules/js-cookie/dist/js.cookie';
 export const cookiesExpirationDate = {expires: 7};
 export const darkLightModeCookieName = "theme";
 
+
 export function getCookie(key) {
     return Cookies.get(key);
 }

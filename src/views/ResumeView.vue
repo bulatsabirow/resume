@@ -5,12 +5,12 @@ import AboutMeComponent from "@/components/AboutMeComponent.vue";
 </script>
 
 <template>
-    <main class="d-flex flex-row main-container w-100 vh-100">
-        <div class="row mx-0">
-            <div class="person-container h-100 col-3 col-4-xl">
-                <PersonComponent/>
+    <main class="container-fluid overflow-auto main-container w-100 vh-100 px-0">
+        <div class="row row-cols-lg-1 min-vh-100 mx-0">
+            <div class="person-container col-lg-3">
+                <PersonComponent class="w-100"/>
             </div>
-            <div class="col-9 h-100">
+            <div class="col-lg-9">
                 <AboutMeComponent/>
             </div>
         </div>
@@ -21,7 +21,11 @@ import AboutMeComponent from "@/components/AboutMeComponent.vue";
     .person-container {
         background-color: var(--bs-purple);
         max-width: 400px;
-        padding-left: 18px;
-        padding-right: 12px;
+    }
+
+    @media (max-width: 992px) {
+        .person-container {
+            width: 100% !important;
+        }
     }
 </style>
