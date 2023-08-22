@@ -1,10 +1,8 @@
 <script setup>
-import {computed} from "vue";
-const currentYear = computed(() => new Date().getFullYear())
-
 import CircularImage from "@/components/UI/CircularImage.vue";
 import HeaderText from "@/components/UI/HeaderText.vue";
 import UnorderedList from "@/components/UI/MediaList.vue";
+import CopyrightYearRange from "@/components/UI/CopyrightYearRange.vue";
 </script>
 
 <template>
@@ -15,7 +13,7 @@ import UnorderedList from "@/components/UI/MediaList.vue";
             <HeaderText size="md">Fullstack developer</HeaderText>
             <UnorderedList></UnorderedList>
         </div>
-        <HeaderText size="sm">{{ currentYear }}</HeaderText>
+        <CopyrightYearRange></CopyrightYearRange>
     </aside>
 </template>
 
