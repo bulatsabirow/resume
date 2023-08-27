@@ -5,11 +5,11 @@ import AboutMeComponent from '@/components/AboutMeComponent.vue'
 
 <template>
   <main class="container-fluid overflow-auto main-container w-100 vh-100 px-0">
-    <div class="row row-cols-lg-1 min-vh-100 mx-0">
+    <div class="row row-cols-lg-1 w-100 min-vh-100 mx-0">
       <div class="person-container col-lg-3">
         <PersonComponent class="w-100" />
       </div>
-      <div class="about-me-container col-lg-9">
+      <div class="about-me-container flex-grow-1 col-lg-9">
         <AboutMeComponent />
       </div>
     </div>
