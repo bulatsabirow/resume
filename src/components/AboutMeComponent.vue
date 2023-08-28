@@ -5,6 +5,8 @@ import { calculateAge } from '@/utils/date'
 import HeaderText from '@/components/UI/HeaderText.vue'
 import SkillsList from '@/components/UI/SkillsList.vue'
 import PageFooter from '@/components/UI/PageFooter.vue'
+import postgresImg from '@/assets/images/postgresql.png'
+import djangoImg from '@/assets/images/django.png'
 
 const age = computed(() => calculateAge('2003/02/15'))
 const breadcrumbs = [{ key: 'age', val: age.value }, { key: 'city' }]
@@ -53,13 +55,13 @@ const skills = [
               class="object-fit-cover"
               :width="30"
               :height="30"
-              src="../assets/images/postgresql.png"
+              :src="postgresImg"
               alt="<postgresql icon>"
             />
             <span class="ms-2 monospace-text skill-text">PostgreSQL</span>
           </li>
           <li>
-            <img class="object-fit-cover" src="../assets/images/django.png" alt="<django icon>" />
+            <img class="object-fit-cover" :src="djangoImg" alt="<django icon>" />
             <span class="ms-2 monospace-text skill-text">Django</span>
           </li>
         </template>
