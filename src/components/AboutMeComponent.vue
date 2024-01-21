@@ -29,7 +29,8 @@ const skills = [
   {
     icon: ['fab', 'docker'],
     title: 'Docker',
-    color: '#016FD0'
+    color: '#016FD0',
+    size: 'lg'
   },
   {
     icon: ['fab', 'react'],
@@ -58,15 +59,15 @@ const skills = [
           <li>
             <img
               class="object-fit-cover"
-              :width="30"
-              :height="30"
+              :width="24"
+              :height="24"
               :src="postgresImg"
               alt="<postgresql icon>"
             />
             <span class="ms-2 monospace-text skill-text">PostgreSQL</span>
           </li>
           <li>
-            <img class="object-fit-cover" :src="djangoImg" alt="<django icon>" />
+            <img class="object-fit-cover" :width="24" :height="24" :src="djangoImg" alt="<django icon>" />
             <span class="ms-2 monospace-text skill-text">Django</span>
           </li>
         </template>

@@ -13,6 +13,7 @@ const props = defineProps({
       :key="skill.title"
       :icon="skill.icon"
       :skill="skill.title"
+      :size="skill.size"
       :color="skill.color"
     />
     <slot name="extra-content"></slot>
