@@ -30,6 +30,11 @@ const skills = [
     icon: ['fab', 'docker'],
     title: 'Docker',
     color: '#016FD0'
+  },
+  {
+    icon: ['fab', 'react'],
+    title: 'React',
+    color: '#61DBFB'
   }
 ]
 </script>

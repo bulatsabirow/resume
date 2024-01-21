@@ -14,7 +14,8 @@ import {
   faPython,
   faDocker,
   faJs,
-  faVuejs
+  faVuejs,
+  faReact
 } from '@fortawesome/free-brands-svg-icons'
 import {
   faSun,
@@ -38,6 +39,7 @@ library.add(
   faDocker,
   faJs,
   faVuejs,
+  faReact,
   faSun,
   faMoon,
   faArrowUpRightFromSquare

@@ -10,6 +10,7 @@ const props = defineProps({
   <ul class="list-unstyled mt-2">
     <SkillsItem
       v-for="skill in props.skills"
+      :key="skill.title"
       :icon="skill.icon"
       :skill="skill.title"
       :color="skill.color"
