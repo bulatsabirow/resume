@@ -1,4 +1,4 @@
-export default [
+export default Object.freeze([
   {
     icon: ['fab', 'python'],
     title: 'Python',
@@ -25,4 +25,4 @@ export default [
     title: 'React',
     color: '#61DBFB'
   }
-]
+])

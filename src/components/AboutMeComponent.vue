@@ -1,12 +1,11 @@
 <script setup>
 import Breadcrumbs from '@/components/UI/Breadcrumbs.vue'
 import { computeAge } from '@/utils/date'
-import skills from '@/data/skills'
+import skillIcons from '@/data/skill_icons'
+import skillImages from '@/data/skill_images'
 import HeaderText from '@/components/UI/HeaderText.vue'
 import SkillsList from '@/components/UI/SkillsList.vue'
 import PageFooter from '@/components/UI/PageFooter.vue'
-import postgresImg from '@/assets/images/postgresql.png'
-import djangoImg from '@/assets/images/django.png'
 import { BIRTH_DATE } from '@/utils/consts'
 
 const age = computeAge(BIRTH_DATE)
@@ -27,31 +26,20 @@ const breadcrumbs = [{ key: 'age', val: age }, { key: 'city' }]
         </p>
       </div>
       <HeaderText header="h2" position="start">{{ $t('skills') }}</HeaderText>
-      <SkillsList :skills="skills">
-        <template v-slot:extra-content>
-          <li>
-            <img
-              class="object-fit-cover"
-              :width="24"
-              :height="24"
-              :src="postgresImg"
-              alt="<postgresql icon>"
-            />
-            <span class="ms-2 monospace-text skill-text">PostgreSQL</span>
-          </li>
-          <li>
-            <img class="object-fit-cover" :width="24" :height="24" :src="djangoImg" alt="<django icon>" />
-            <span class="ms-2 monospace-text skill-text">Django</span>
-          </li>
-        </template>
+      <SkillsList :skill-icons="skillIcons" :skill-images="skillImages">
       </SkillsList>
     </div>
     <PageFooter class="mt-4"></PageFooter>
   </main>
 </template>
 
-<style scoped>
+<style>
 .about-me-text {
   text-indent: 2rem;
+}
+
+.skill-image {
+  width: 24px;
+  height: 24px;
 }
 </style>

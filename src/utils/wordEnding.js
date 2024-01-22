@@ -1,4 +1,4 @@
-export function defineRussianWordEnding(choice, choicesLength, orgRule) {
+export function defineRussianWordEnding(choice) {
     switch (choice) {
         case (choice % 20) === 1:
             return 1;
@@ -9,11 +9,6 @@ export function defineRussianWordEnding(choice, choicesLength, orgRule) {
     }
 }
 
-export function defineEnglishWordEnding(choice, choicesLength, orgRule) {
-    switch (choice) {
-        case 1:
-            return 1;
-        default:
-            return 2;
-    }
+export function defineEnglishWordEnding(choice) {
+    return choice === 1 ? 1 : 2
 }

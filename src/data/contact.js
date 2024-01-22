@@ -1,4 +1,4 @@
-export default [
+export default Object.freeze([
   {
     url: 'https://github.com/bulatsabirow',
     icon: ['fab', 'github']
@@ -15,4 +15,4 @@ export default [
     url: 'mailto:bulatsabirow@gmail.com',
     icon: ['fas', 'envelope']
   }
-]
+])
