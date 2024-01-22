@@ -1,47 +1,24 @@
 <script setup>
-const allowedSizes = ['xl', 'lg', 'md', 'sm', 'xs', 'xxs']
+import { computed } from 'vue'
+
 const props = defineProps({
-  size: {
+  header: {
     type: String,
-    default: 'lg'
+    default: 'h3'
   },
   position: {
     type: String,
     default: 'center'
   }
-})
+});
+const headerStyle = computed(() => `${props.position} monospace-text mt-4`);
 </script>
 
 <template>
-  <div class="d-inline" v-if="size === 'xl'">
-    <h1 :class="`text-${position}` + ' monospace-text mt-4'">
+  <div class="d-inline">
+    <component :is="props.header" :class="headerStyle">
       <slot></slot>
-    </h1>
-  </div>
-  <div class="d-inline" v-else-if="size === 'lg'">
-    <h2 :class="`text-${position}` + ' monospace-text mt-4'">
-      <slot></slot>
-    </h2>
-  </div>
-  <div class="d-inline" v-else-if="size === 'md' || !allowedSizes.includes(size)">
-    <h3 :class="`text-${position}` + ' monospace-text mt-4'">
-      <slot></slot>
-    </h3>
-  </div>
-  <div class="d-inline" v-else-if="size === 'sm'">
-    <h4 :class="`text-${position}` + ' monospace-text mt-4'">
-      <slot></slot>
-    </h4>
-  </div>
-  <div class="d-inline" v-else-if="size === 'xs'">
-    <h5 :class="`text-${position}` + ' monospace-text mt-4'">
-      <slot></slot>
-    </h5>
-  </div>
-  <div class="d-inline" v-else>
-    <h6 :class="`text-${position}` + ' monospace-text mt-4'">
-      <slot></slot>
-    </h6>
+    </component>
   </div>
 </template>
 

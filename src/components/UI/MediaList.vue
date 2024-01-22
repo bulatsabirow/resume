@@ -1,29 +1,11 @@
 <script setup>
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-
-const iconsList = [
-  {
-    url: 'https://github.com/bulatsabirow',
-    icon: ['fab', 'github']
-  },
-  {
-    url: 'https://gitlab.com/bulatsabirow',
-    icon: ['fab', 'gitlab']
-  },
-  {
-    url: 'https://t.me/bulatsabirow',
-    icon: ['fab', 'telegram']
-  },
-  {
-    url: 'mailto:bulatsabirow@gmail.com',
-    icon: ['fas', 'envelope']
-  }
-]
+import iconList from '@/data/contact'
 </script>
 
 <template>
   <ul class="list-unstyled mt-4">
-    <li class="d-inline-block ms-3" v-for="{ url, icon } in iconsList">
+    <li class="d-inline-block ms-3" v-for="{ url, icon } in iconList" :key="url">
       <a :href="url" target="_blank" class="media-link">
         <FontAwesomeIcon size="2x" color="indigo" :icon="icon" />
       </a>
