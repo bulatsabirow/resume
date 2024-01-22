@@ -11,7 +11,6 @@ watch(isChecked, (newState, oldState) => {
 const iconClassName = computed(() => `icon-${isChecked.value ? 'sun' : 'moon'}`)
 const spanClassName = computed(() => isChecked.value ? 'ms-2' : 'me-5')
 const icon = computed(() => ['fas', isChecked.value ? 'sun' : 'moon'])
-console.log(isChecked, iconClassName, spanClassName)
 </script>
 
 <template>

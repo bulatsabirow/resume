@@ -1,43 +1,15 @@
 <script setup>
 import Breadcrumbs from '@/components/UI/Breadcrumbs.vue'
-import { computed } from 'vue'
 import { calculateAge } from '@/utils/date'
+import skills from '@/data/skills'
 import HeaderText from '@/components/UI/HeaderText.vue'
 import SkillsList from '@/components/UI/SkillsList.vue'
 import PageFooter from '@/components/UI/PageFooter.vue'
 import postgresImg from '@/assets/images/postgresql.png'
 import djangoImg from '@/assets/images/django.png'
 
-const age = computed(() => calculateAge('2003/02/15'))
+const age = calculateAge('2003/02/15')
 const breadcrumbs = [{ key: 'age', val: age.value }, { key: 'city' }]
-const skills = [
-  {
-    icon: ['fab', 'python'],
-    title: 'Python',
-    color: '#00D846'
-  },
-  {
-    icon: ['fab', 'js'],
-    title: 'JavaScript',
-    color: '#F0D74D'
-  },
-  {
-    icon: ['fab', 'vuejs'],
-    title: 'Vue.js',
-    color: '#2CB284'
-  },
-  {
-    icon: ['fab', 'docker'],
-    title: 'Docker',
-    color: '#016FD0',
-    size: 'lg'
-  },
-  {
-    icon: ['fab', 'react'],
-    title: 'React',
-    color: '#61DBFB'
-  }
-]
 </script>
 
 <template>

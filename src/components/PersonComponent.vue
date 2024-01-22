@@ -2,7 +2,7 @@
 import CircularImage from '@/components/UI/CircularImage.vue'
 import HeaderText from '@/components/UI/HeaderText.vue'
 import UnorderedList from '@/components/UI/MediaList.vue'
-import CopyrightYearRange from '@/components/UI/CopyrightYearRange.vue'
+import CopyrightYearRange from '@/components/UI/CurrentYearRange.vue'
 //
 // import ownerImg from '@/assets/images/1659087797697.jpg'
 //
