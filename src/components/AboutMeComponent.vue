@@ -1,15 +1,16 @@
 <script setup>
 import Breadcrumbs from '@/components/UI/Breadcrumbs.vue'
-import { calculateAge } from '@/utils/date'
+import { computeAge } from '@/utils/date'
 import skills from '@/data/skills'
 import HeaderText from '@/components/UI/HeaderText.vue'
 import SkillsList from '@/components/UI/SkillsList.vue'
 import PageFooter from '@/components/UI/PageFooter.vue'
 import postgresImg from '@/assets/images/postgresql.png'
 import djangoImg from '@/assets/images/django.png'
+import { BIRTH_DATE } from '@/utils/consts'
 
-const age = calculateAge('2003/02/15')
-const breadcrumbs = [{ key: 'age', val: age.value }, { key: 'city' }]
+const age = computeAge(BIRTH_DATE)
+const breadcrumbs = [{ key: 'age', val: age }, { key: 'city' }]
 </script>
 
 <template>
