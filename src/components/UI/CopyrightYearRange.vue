@@ -14,7 +14,7 @@ const currentYear = computed(() => {
 </script>
 
 <template>
-  <HeaderText size="sm">{{ currentYear }}</HeaderText>
+  <HeaderText header="h4">{{ currentYear }}</HeaderText>
 </template>
 
 <style scoped></style>

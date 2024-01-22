@@ -24,7 +24,7 @@ const props = defineProps({
 
 <style>
 .skill-icon {
-  color: v-bind(props[ 'color']);
+  color: v-bind(props['color']);
 }
 
 .skill-text {

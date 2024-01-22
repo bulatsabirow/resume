@@ -13,7 +13,7 @@ import CopyrightYearRange from '@/components/UI/CopyrightYearRange.vue'
     <div class="flex-item-wrapper d-flex flex-column justify-content-center align-items-center">
       <CircularImage :radius="150" :src="ownerImg"></CircularImage>
       <HeaderText>{{ $t('name') }}</HeaderText>
-      <HeaderText size="md"></HeaderText>
+      <HeaderText></HeaderText>
       <UnorderedList></UnorderedList>
     </div>
     <CopyrightYearRange></CopyrightYearRange>

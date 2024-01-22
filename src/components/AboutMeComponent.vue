@@ -43,7 +43,7 @@ const skills = [
 <template>
   <main class="px-3 d-flex flex-column h-100 w-100">
     <div class="about-me-content flex-grow-1">
-      <HeaderText size="lg" position="start">{{ $t('aboutMe') }}</HeaderText>
+      <HeaderText header="h2" position="start">{{ $t('aboutMe') }}</HeaderText>
       <Breadcrumbs class="mt-3" :breadcrumbs="breadcrumbs" />
       <div class="about-me">
         <p class="mb-0 about-me-text text-break lh-lg">
@@ -53,7 +53,7 @@ const skills = [
           {{ $t('aboutMeParagraph2') }}
         </p>
       </div>
-      <HeaderText size="lg" position="start">{{ $t('skills') }}</HeaderText>
+      <HeaderText header="h2" position="start">{{ $t('skills') }}</HeaderText>
       <SkillsList :skills="skills">
         <template v-slot:extra-content>
           <li>
