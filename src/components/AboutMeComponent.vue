@@ -1,5 +1,5 @@
 <script setup>
-import Breadcrumbs from '@/components/UI/Breadcrumbs.vue'
+import Breadcrumbs from '@/components/UI/BreadcrumbsComponent.vue'
 import { computeAge } from '@/utils/date'
 import skillIcons from '@/data/skill_icons'
 import skillImages from '@/data/skill_images'
@@ -26,8 +26,7 @@ const breadcrumbs = [{ key: 'age', val: age }, { key: 'city' }]
         </p>
       </div>
       <HeaderText header="h2" position="start">{{ $t('skills') }}</HeaderText>
-      <SkillsList :skill-icons="skillIcons" :skill-images="skillImages">
-      </SkillsList>
+      <SkillsList :skill-icons="skillIcons" :skill-images="skillImages"> </SkillsList>
     </div>
     <PageFooter class="mt-4"></PageFooter>
   </main>

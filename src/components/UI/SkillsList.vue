@@ -17,10 +17,11 @@ const props = defineProps({
       :size="skill.size"
       :color="skill.color"
     />
-    <SkillItem v-for="skill in props.skillImages"
-                    :key="skill.title"
-                    :skill="skill.title"
-                    :img="{alt: skill.alt, src: skill.src}"
+    <SkillItem
+      v-for="skill in props.skillImages"
+      :key="skill.title"
+      :skill="skill.title"
+      :img="{ alt: skill.alt, src: skill.src }"
     />
     <slot name="extra-content"></slot>
   </ul>

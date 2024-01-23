@@ -10,8 +10,8 @@ const props = defineProps({
     type: String,
     default: 'center'
   }
-});
-const headerStyle = computed(() => `${props.position} monospace-text mt-4`);
+})
+const headerStyle = computed(() => `${props.position} monospace-text mt-4`)
 </script>
 
 <template>
