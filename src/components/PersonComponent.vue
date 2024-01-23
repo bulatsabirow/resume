@@ -1,11 +1,10 @@
 <script setup>
 import CircularImage from '@/components/UI/CircularImage.vue'
 import HeaderText from '@/components/UI/HeaderText.vue'
-import UnorderedList from '@/components/UI/MediaList.vue'
+import MediaList from '@/components/UI/MediaList.vue'
 import CopyrightYearRange from '@/components/UI/CurrentYearRange.vue'
 //
 // import ownerImg from '@/assets/images/1659087797697.jpg'
-//
 </script>
 
 <template>
@@ -13,10 +12,10 @@ import CopyrightYearRange from '@/components/UI/CurrentYearRange.vue'
     <div class="flex-item-wrapper d-flex flex-column justify-content-center align-items-center">
       <CircularImage :radius="150" :src="ownerImg"></CircularImage>
       <HeaderText>{{ $t('name') }}</HeaderText>
-      <HeaderText></HeaderText>
-      <UnorderedList></UnorderedList>
+      <HeaderText header="h4">{{ $t('job') }}</HeaderText>
+      <MediaList />
     </div>
-    <CopyrightYearRange></CopyrightYearRange>
+    <CopyrightYearRange />
   </aside>
 </template>
 
