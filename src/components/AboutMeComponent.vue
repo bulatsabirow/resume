@@ -7,6 +7,7 @@ import HeaderText from '@/components/UI/HeaderText.vue'
 import SkillsList from '@/components/UI/SkillsList.vue'
 import PageFooter from '@/components/UI/PageFooter.vue'
 import { BIRTH_DATE } from '@/utils/consts'
+import CareerList from '@/components/UI/CareerList.vue'
 
 const age = computeAge(BIRTH_DATE)
 const breadcrumbs = [{ key: 'age', val: age }, { key: 'city' }]
@@ -25,6 +26,8 @@ const breadcrumbs = [{ key: 'age', val: age }, { key: 'city' }]
           {{ $t('aboutMeParagraph2') }}
         </p>
       </div>
+      <HeaderText header="h2" position="start">Career</HeaderText>
+      <CareerList :career-list="$tm('career')" />
       <HeaderText header="h2" position="start">{{ $t('skills') }}</HeaderText>
       <SkillsList :skill-icons="skillIcons" :skill-images="skillImages"> </SkillsList>
     </div>
