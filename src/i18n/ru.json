@@ -1,6 +1,6 @@
 {
   "name": "Булат Сабиров",
-  "job": "",
+  "job": "Backend developer",
   "aboutMe": "Обо мне",
   "breadcrumbs": {
     "city": "Казань",
@@ -10,5 +10,12 @@
   "aboutMeParagraph2": "Открыт к новым вызовам и нацелен на плодотворное сотрудничество.",
   "skills": "Навыки",
   "lang": "English",
-  "sourceCode": "Исходный код"
+  "sourceCode": "Исходный код",
+  "career": [
+    {
+      "companyName": "Казанский федеральный университет (КФУ)",
+      "yearRange": "2022 - ...",
+      "description": "Разработка серверной и клиентской частей сайта детского сада КФУ на Django и React"
+    }
+  ]
 }

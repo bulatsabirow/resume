@@ -1,14 +1,21 @@
 {
   "name": "Bulat Sabirov",
-  "job": "",
+  "job": "Backend developer",
   "aboutMe": "About me",
   "breadcrumbs": {
     "age": "0 years old | {n} year old | {n} years old",
     "city": "Kazan"
   },
-  "aboutMeParagraph1": "I am a third-year student at ITIS, Kazan Federal University. Despite having limited practical development experience, I am capable of quickly acquiring new skills and working hard to achieve the desired outcome.",
-  "aboutMeParagraph2": "I am open to new challenges and committed to active collaboration.",
+  "aboutMeParagraph1": "I'm a third-year student at ITIS, Kazan Federal University. Despite having limited practical development experience, I am capable of quickly acquiring new skills and working hard to achieve the desired outcome.",
+  "aboutMeParagraph2": "I'm open to new challenges and committed to active collaboration.",
   "skills": "Skills",
   "lang": "Русский",
-  "sourceCode": "Source code"
+  "sourceCode": "Source code",
+  "career": [
+    {
+      "companyName": "Kazan Federal University (KFU)",
+      "yearRange": "2022 - ...",
+      "description": "Developed backend and frontend of KFU kindergarten website on Django & React"
+    }
+  ]
 }
