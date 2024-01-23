@@ -14,14 +14,14 @@ const router = createRouter({
   ]
 })
 
-router.beforeEach((to, from) => {
+router.beforeEach((to) => {
   document.body.setAttribute('data-bs-theme', getCookie(darkLightModeCookieName) ?? 'dark')
   if (to.name === 'About') {
-    if (!to.query.hasOwnProperty('lang')) {
+    if (!Object.prototype.hasOwnProperty.call(to.query, 'lang')) {
       router.replace({ name: 'About', query: { lang: defaultLocale } })
     }
     i18n.global.locale.value = to.query.lang ?? defaultLocale
-    document.documentElement.lang = String(i18n.global.locale.value);
+    document.documentElement.lang = String(i18n.global.locale.value)
   }
 })
 
