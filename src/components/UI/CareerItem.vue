@@ -23,7 +23,7 @@ const props = defineProps({
     <div class="col text-center text-body-tertiary">
       {{ props.yearRange }}
     </div>
-    <div class="col-6 text-center">
+    <div class="col-6">
       {{ props.description }}
     </div>
   </div>

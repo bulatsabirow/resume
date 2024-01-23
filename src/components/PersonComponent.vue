@@ -2,7 +2,7 @@
 import CircularImage from '@/components/UI/CircularImage.vue'
 import HeaderText from '@/components/UI/HeaderText.vue'
 import MediaList from '@/components/UI/MediaList.vue'
-import CopyrightYearRange from '@/components/UI/CurrentYearRange.vue'
+import CurrentYearRange from '@/components/UI/CurrentYearRange.vue'
 //
 // import ownerImg from '@/assets/images/1659087797697.jpg'
 </script>
@@ -15,7 +15,7 @@ import CopyrightYearRange from '@/components/UI/CurrentYearRange.vue'
       <HeaderText header="h4">{{ $t('job') }}</HeaderText>
       <MediaList />
     </div>
-    <CopyrightYearRange />
+    <CurrentYearRange />
   </aside>
 </template>
 

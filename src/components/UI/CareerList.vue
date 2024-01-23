@@ -9,10 +9,10 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="container">
+  <div class="container mx-0">
     <CareerItem
-      v-for="careerItem in props.careerList"
-      :key="careerItem.yearRange"
+      v-for="[index, careerItem] in Array.prototype.entries.call(props.careerList)"
+      :key="index"
       :company-name="careerItem.companyName"
       :description="careerItem.description"
       :year-range="careerItem.yearRange"
