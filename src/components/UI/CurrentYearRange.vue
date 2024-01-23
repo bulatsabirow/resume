@@ -1,6 +1,6 @@
 <script setup>
 import HeaderText from '@/components/UI/HeaderText.vue'
-import {STARTING_YEAR} from '@/utils/consts'
+import { STARTING_YEAR } from '@/utils/consts'
 import dayjs from 'dayjs'
 
 const computeCurrentYearRange = (startingYear) => {
