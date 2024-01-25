@@ -1,4 +1,15 @@
 /* color palette from <https://github.com/vuejs/theme> */
+
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('../fonts/RobotoMono-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url('../fonts/Ubuntu-Regular.ttf') format('truetype');
+}
+
 :root {
   --vt-c-white: #ffffff;
   --vt-c-white-soft: #f8f8f8;
@@ -66,7 +77,24 @@ body {
     color 0.5s,
     background-color 0.5s;
   line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto Mono', monospace;
+}
+
+* {
   font-family:
+    Ubuntu,
+    serif,
     Inter,
     -apple-system,
     BlinkMacSystemFont,
@@ -79,14 +107,6 @@ body {
     'Droid Sans',
     'Helvetica Neue',
     sans-serif,
-    'Roboto Mono';
-  font-size: 15px;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-@font-face {
-  font-family: 'Roboto Mono';
-  src: url('../fonts/RobotoMono-Bold.ttf') format('truetype');
+    'Roboto Mono',
+    monospace;
 }

@@ -10,7 +10,7 @@ const computeCurrentYearRange = (startingYear) => {
 </script>
 
 <template>
-  <HeaderText header="h4">{{ computeCurrentYearRange(STARTING_YEAR) }}</HeaderText>
+  <HeaderText header="h5">{{ computeCurrentYearRange(STARTING_YEAR) }}</HeaderText>
 </template>
 
 <style scoped></style>
