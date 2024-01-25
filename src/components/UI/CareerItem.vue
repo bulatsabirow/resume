@@ -16,24 +16,21 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="row w-auto">
-    <div class="col-4 col-sm-3 text-center">
+  <tr>
+    <td class="text-center">
       {{ props.companyName }}
-    </div>
-    <div class="col-4 col-sm-3 text-center text-body-tertiary">
+    </td>
+    <td class="text-center text-body-tertiary px-2">
       {{ props.yearRange }}
-    </div>
-    <div class="col-4 col-sm-6">
+    </td>
+    <td>
       {{ props.description }}
-    </div>
-  </div>
+    </td>
+  </tr>
 </template>
 
 <style scoped>
-@media screen and (max-width: 475px) {
-  .row > div {
-    text-wrap: normal;
-    word-break: break-word;
-  }
+tr > td {
+  min-width: 8rem;
 }
 </style>
