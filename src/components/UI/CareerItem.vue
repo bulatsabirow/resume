@@ -16,17 +16,21 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="row">
-    <div class="col text-center">
+  <tr>
+    <td class="text-center">
       {{ props.companyName }}
-    </div>
-    <div class="col text-center text-body-tertiary">
+    </td>
+    <td class="text-center text-body-tertiary px-2">
       {{ props.yearRange }}
-    </div>
-    <div class="col-6">
+    </td>
+    <td>
       {{ props.description }}
-    </div>
-  </div>
+    </td>
+  </tr>
 </template>
 
-<style scoped></style>
+<style scoped>
+tr > td {
+  min-width: 8rem;
+}
+</style>
