@@ -20,6 +20,8 @@ jobs:
           node-version: ${{ env.NODE_JS_VERSION }}
       - name: install project dependencies
         run: npm ci
+      - name: setup Pages
+        uses: actions/configure-pages@v4
       - name: build project
         run: npm run build
       - name: upload built files
@@ -40,4 +42,5 @@ jobs:
 
     steps:
       - name: deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v3
