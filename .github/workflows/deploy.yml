@@ -3,7 +3,7 @@ on:
     branches:
       - master
     paths-ignore:
-      - './github/workflows/*'
+      - './github/workflows/**'
   workflow_dispatch:
 
 env:
@@ -21,11 +21,11 @@ jobs:
       - name: install project dependencies
         run: npm ci
       - name: setup Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v3
       - name: build project
         run: npm run build
       - name: upload built files
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v2
         with:
           path: ./dist
   deploy:
