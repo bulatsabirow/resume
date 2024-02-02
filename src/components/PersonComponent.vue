@@ -3,8 +3,8 @@ import CircularImage from '@/components/UI/CircularImage.vue'
 import HeaderText from '@/components/UI/HeaderText.vue'
 import MediaList from '@/components/UI/MediaList.vue'
 import CurrentYearRange from '@/components/UI/CurrentYearRange.vue'
-//
-// import ownerImg from '@/assets/images/1659087797697.jpg'
+
+import ownerImg from '@/assets/images/bulatsabirow.jpg'
 </script>
 
 <template>

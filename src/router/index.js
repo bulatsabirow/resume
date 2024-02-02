@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import { defaultLocale } from '@/i18n'
+import { defaultLocale } from '@/locales'
 import { i18n } from '@/main'
 import { darkLightModeCookieName, getCookie } from '@/utils/cookie'
 
