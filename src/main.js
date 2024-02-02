@@ -1,6 +1,6 @@
 import './assets/css/main.css'
 import 'bootstrap'
-import './custom_bootstrap/bootstrap.css'
+import './assets/css/bootstrap/bootstrap.css'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
@@ -27,7 +27,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { createI18n, useI18n } from 'vue-i18n'
 
 import App from './App.vue'
-import { defaultLocale, languages } from '@/i18n'
+import { defaultLocale, languages } from '@/locales'
 import { defineEnglishWordEnding, defineRussianWordEnding } from '@/utils/wordEnding'
 
 library.add(
