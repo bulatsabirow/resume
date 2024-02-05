@@ -17,13 +17,13 @@ const props = defineProps({
 
 <template>
   <tr>
-    <td class="text-center">
+    <td class="text-center pb-3">
       {{ props.companyName }}
     </td>
-    <td class="text-center text-body-tertiary px-2">
+    <td class="text-center text-body-tertiary px-2 pb-3">
       {{ props.yearRange }}
     </td>
-    <td>
+    <td class="pb-3">
       {{ props.description }}
     </td>
   </tr>
