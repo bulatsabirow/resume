@@ -16,12 +16,12 @@
   "careerTitle": "Опыт работы",
   "career": [
     {
-      "companyName": "Казанский федеральный университет (КФУ)",
+      "companyName": "Smart Education Lab",
       "yearRange": "Июль 2023 - Декабрь 2023",
       "description": "Разработка серверной и клиентской частей сайта детского сада КФУ на Django и React"
     },
     {
-      "companyName": "Казанский федеральный университет (КФУ)",
+      "companyName": "Smart Education Lab",
       "yearRange": "Сентябрь 2022 - Май 2023",
       "description": "Разработка проекта оцифровки базы данных растений зооботанического сада г.Казани на Django и Vue"
     }

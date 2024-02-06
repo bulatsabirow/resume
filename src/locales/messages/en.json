@@ -16,12 +16,12 @@
   "careerTitle": "Career",
   "career": [
     {
-      "companyName": "Kazan Federal University (KFU)",
+      "companyName": "Smart Education Lab",
       "yearRange": "July 2023 - December 2023",
       "description": "Developed backend and frontend of KFU kindergarten website on Django & React"
     },
     {
-      "companyName": "Kazan Federal University (KFU)",
+      "companyName": "Smart Education Lab",
       "yearRange": "September 2022 - May 2023",
       "description": "Developed digitized version of the Kazan botanical garden's plants database on Django & Vue"
     }
