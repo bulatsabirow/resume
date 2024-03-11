@@ -12,7 +12,7 @@ import ownerImg from '@/assets/images/bulatsabirow.jpg'
     <div class="flex-item-wrapper d-flex flex-column justify-content-center align-items-center">
       <CircularImage :radius="150" :src="ownerImg"></CircularImage>
       <HeaderText>{{ $t('name') }}</HeaderText>
-      <HeaderText header="h4">{{ $t('job') }}</HeaderText>
+      <HeaderText class="text-center" header="h4">{{ $t('job') }}</HeaderText>
       <MediaList />
     </div>
     <CurrentYearRange />
