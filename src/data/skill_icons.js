@@ -10,19 +10,9 @@ export default Object.freeze([
     color: '#F0D74D'
   },
   {
-    icon: ['fab', 'vuejs'],
-    title: 'Vue.js',
-    color: '#2CB284'
-  },
-  {
     icon: ['fab', 'docker'],
     title: 'Docker',
     color: '#016FD0',
     size: 'lg'
-  },
-  {
-    icon: ['fab', 'react'],
-    title: 'React',
-    color: '#61DBFB'
   }
 ])
