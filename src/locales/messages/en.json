@@ -15,6 +15,11 @@
   "careerTitle": "Career",
   "career": [
     {
+      "companyName": "Sber",
+      "yearRange": "June 2024 - ...",
+      "description": "Trainee Data Engineer"
+    },
+    {
       "companyName": "Smart Education Lab",
       "yearRange": "July 2023 - December 2023",
       "description": "Developed backend and frontend of KFU kindergarten website on Django & React"

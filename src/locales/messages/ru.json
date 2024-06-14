@@ -15,6 +15,11 @@
   "careerTitle": "Опыт работы",
   "career": [
     {
+      "companyName": "Сбер",
+      "yearRange": "Июнь 2024 - ...",
+      "description": "Стажер-инженер данных"
+    },
+    {
       "companyName": "Smart Education Lab",
       "yearRange": "Июль 2023 - Декабрь 2023",
       "description": "Разработка серверной и клиентской частей сайта детского сада КФУ на Django и React"
