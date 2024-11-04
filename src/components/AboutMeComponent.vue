@@ -31,7 +31,7 @@ const breadcrumbs = [{ key: 'age', val: age }, { key: 'city' }]
       <HeaderText header="h2" position="start">{{ $t('careerTitle') }}</HeaderText>
       <CareerList class="mt-3 mb-5" :career-list="$tm('career')" />
       <HeaderText header="h2" position="start">{{ $t('skills') }}</HeaderText>
-      <SkillsList :skill-icons="skillIcons" :skill-images="skillImages"> </SkillsList>
+      <SkillsList :skill-icons="skillIcons" :skill-images="skillImages"></SkillsList>
     </div>
     <PageFooter class="mt-4"></PageFooter>
   </main>
@@ -45,5 +45,9 @@ const breadcrumbs = [{ key: 'age', val: age }, { key: 'city' }]
 .skill-image {
   width: 1.5rem;
   height: 1.5rem;
+}
+
+.skill-text {
+  font-size: 1rem;
 }
 </style>

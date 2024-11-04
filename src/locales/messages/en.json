@@ -1,13 +1,13 @@
 {
   "name": "Bulat Sabirov",
-  "job": "Python backend developer",
+  "job": "Data engineer",
   "aboutMe": "About me",
   "breadcrumbs": {
     "age": "0 years old | {n} year old | {n} years old",
     "city": "Kazan"
   },
   "aboutMeParagraphs": [
-    "I'm a third-year student at ITIS, Kazan Federal University. I have the ability to quickly learn necessary skills and adapt to new technologies. I approach work with a sense of responsibility, striving to meet deadlines and valuing the quality of the product, I always try to help my colleagues and I’m not shy about asking for help."
+    "I'm fourth-year student at ITIS, Kazan Federal University. I have the ability to quickly learn necessary skills and adapt to new technologies. I approach work with a sense of responsibility, striving to meet deadlines and valuing the quality of the product, I always try to help my colleagues and I’m not shy about asking for help."
   ],
   "skills": "Skills",
   "lang": "Русский",
@@ -16,23 +16,8 @@
   "career": [
     {
       "companyName": "Sber",
-      "yearRange": "September 2024 - ...",
-      "description": "Junior Data Engineer"
-    },
-    {
-      "companyName": "Sber",
       "yearRange": "June 2024 - ...",
-      "description": "Trainee Data Engineer"
-    },
-    {
-      "companyName": "Smart Education Lab",
-      "yearRange": "July 2023 - December 2023",
-      "description": "Developed backend and frontend of KFU kindergarten website on Django & React"
-    },
-    {
-      "companyName": "Smart Education Lab",
-      "yearRange": "September 2022 - May 2023",
-      "description": "Developed digitized version of the Kazan botanical garden's plants database on Django & Vue"
+      "description": "Creation, maintenance, optimization of infrastructure for big data storage and processing & collaboration with analysts and data scientists."
     }
   ]
 }
