@@ -2,50 +2,46 @@ on:
   push:
     branches:
       - master
-    paths-ignore:
-      - './github/workflows/**'
   workflow_dispatch:
 
 env:
   NODE_JS_VERSION: 21
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: fetch repository code
+      - name: Checkout repository
         uses: actions/checkout@v4
-      - name: install NodeJS
+
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_JS_VERSION }}
-      - name: install project dependencies
+
+      - name: Install dependencies
         run: npm ci
-      - name: setup Pages
-        uses: actions/configure-pages@v3
-      - name: build project
+
+      - name: Build project
         run: npm run build
-      - name: upload built files
-        uses: actions/upload-artifact@v4
+
+      - name: Upload built site
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
+
   deploy:
-    runs-on: ubuntu-latest
     needs: build
+    runs-on: ubuntu-latest
     permissions:
       pages: write
       id-token: write
+
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: Download built files
-        uses: actions/download-artifact@v4
-        with:
-          path: ./dist
-
-      - name: deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v3
-        with:
-          artifact_path: ./dist
