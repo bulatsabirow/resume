@@ -1,23 +1,37 @@
 {
   "name": "Bulat Sabirov",
-  "job": "Data engineer",
-  "aboutMe": "About me",
+  "job": "Data Engineer",
+  "aboutMe": "About Me",
   "breadcrumbs": {
-    "age": "0 years old | {n} year old | {n} years old",
-    "city": "Kazan"
+    "city": "Kazan",
+    "age": "0 years | {n} year | {n} years | {n} years"
   },
   "aboutMeParagraphs": [
-    "I'm fourth-year student at ITIS, Kazan Federal University. I have the ability to quickly learn necessary skills and adapt to new technologies. I approach work with a sense of responsibility, striving to meet deadlines and valuing the quality of the product, I always try to help my colleagues and I’m not shy about asking for help."
+    "Data engineer with 1+ year of experience and a background in web development. Graduate of Kazan Federal University with a degree in Software Engineering.",
+    "Quick to learn new technologies and acquire necessary skills, developing as a T-shaped specialist by deepening expertise in related areas.",
+    "Strive to understand not only the technical aspects of tasks but also their practical value."
   ],
   "skills": "Skills",
-  "lang": "Русский",
-  "sourceCode": "Source code",
+  "lang": "English",
+  "sourceCode": "Source Code",
   "careerTitle": "Career",
   "career": [
     {
       "companyName": "Sber",
       "yearRange": "June 2024 - ...",
-      "description": "Creation, maintenance, optimization of infrastructure for big data storage and processing & collaboration with analysts and data scientists."
+      "description": "Working with the Big Data stack (Hadoop, Spark, SQL, Python) at the intersection of data analysis and process automation, preparing data for regulatory reporting and modeling."
+    },
+    {
+      "companyName": "Smart Education Lab",
+      "yearRange": "June 2023 - April 2024",
+      "description": "Implemented backend (Django) and frontend (React) components of a web app for KFU kindergarten, including basic DevOps tasks."
+    }
+  ],
+  "projectsTitle": "Projects",
+  "projects": [
+    {
+      "projectName": "<a target='_blank' class='text-decoration-none' href='https://spgraph.io'><span style='color: #233CC8;'>spgraph.io</span></a>",
+      "description": "Web application created in the scope of my <a target='_blank' href='https://kpfu.ru/student_diplom/10.160.178.20_L65KU_VBREX986TE0R40YMJ0I1BONY36Z5GMMUW_EBJJTPC9AJ_F_Sabirov.pdf' class='text-decoration-none p-0' style='color: #233CC8;'>thesis project.</a>"
     }
   ]
 }
