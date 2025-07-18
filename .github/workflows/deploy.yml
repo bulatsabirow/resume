@@ -25,7 +25,7 @@ jobs:
       - name: build project
         run: npm run build
       - name: upload built files
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           path: ./dist
   deploy:
