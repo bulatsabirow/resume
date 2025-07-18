@@ -4,7 +4,7 @@ import HeaderText from '@/components/UI/HeaderText.vue'
 import MediaList from '@/components/UI/MediaList.vue'
 import CurrentYearRange from '@/components/UI/CurrentYearRange.vue'
 
-// import ownerImg from '@/assets/images/bulatsabirow.jpg'
+import ownerImg from '@/assets/images/bulatsabirow.jpg'
 </script>
 
 <template>
