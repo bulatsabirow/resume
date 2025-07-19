@@ -4,7 +4,7 @@
   "aboutMe": "About Me",
   "breadcrumbs": {
     "city": "Kazan",
-    "age": "0 years | {n} year | {n} years | {n} years"
+    "age": "0 years | {n} year old | {n} years old | {n} years old"
   },
   "aboutMeParagraphs": [
     "Data engineer with 1+ year of experience and a background in web development. Graduate of Kazan Federal University with a degree in Software Engineering.",
@@ -19,12 +19,12 @@
     {
       "companyName": "Sber",
       "yearRange": "June 2024 - ...",
-      "description": "Working with the Big Data stack (Hadoop, Spark, SQL, Python) at the intersection of data analysis and process automation, preparing data for regulatory reporting and modeling."
+      "description": "Working with the Big Data stack (Hadoop, Spark, SQL, Python) at the intersection of data analysis and automated data collection, preparing data for regulatory reporting and modeling."
     },
     {
       "companyName": "Smart Education Lab",
       "yearRange": "June 2023 - April 2024",
-      "description": "Implemented backend (Django) and frontend (React) components of a web app for KFU kindergarten, including basic DevOps tasks."
+      "description": "Implemented backend (Django) and frontend (React) components of a web application for KFU kindergarten, including basic DevOps tasks."
     }
   ],
   "projectsTitle": "Projects",
