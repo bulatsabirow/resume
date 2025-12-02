@@ -17,11 +17,19 @@
   "careerTitle": "Career",
   "career": [
     {
+      "identifier": "tinkoff",
+      "companyName": "T-Bank (ex. Tinkoff)",
+      "yearRange": "September 2025 - November 2025",
+      "description": "Support and development of the bank’s corporate DWH on Greenplum – designing and developing data marts and ETL pipelines according to business requirements, writing SQL and Python scripts for data processing"
+    },
+    {
+      "identifier": "sber",
       "companyName": "Sber",
-      "yearRange": "June 2024 - ...",
+      "yearRange": "June 2024 - August 2025",
       "description": "Working with the Big Data stack (Hadoop, Spark, SQL, Python) at the intersection of data analysis and automated data collection, preparing data for regulatory reporting and modeling."
     },
     {
+      "identifier": "kfu",
       "companyName": "Smart Education Lab",
       "yearRange": "June 2023 - April 2024",
       "description": "Implemented backend (Django) and frontend (React) components of a web application for KFU kindergarten, including basic DevOps tasks."

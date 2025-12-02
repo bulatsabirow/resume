@@ -1,4 +1,4 @@
-# Resume [bulatsabirow.ru](https://bulatsabirow.ru)
+# Resume [bulatsabirow.me](https://bulatsabirow.ru)
 
 ![Github Actions](https://github.com/bulatsabirow/resume/actions/workflows/deploy.yml/badge.svg?branch=master)
 ## Setup Project

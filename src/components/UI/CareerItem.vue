@@ -18,7 +18,9 @@ const props = defineProps({
 <template>
   <tr>
     <td class="text-center pb-3">
-      {{ props.companyName }}
+      <slot name="companyName">
+        {{ props.companyName }}
+      </slot>
     </td>
     <td class="text-center text-body-tertiary px-2 pb-3">
       {{ props.yearRange }}
